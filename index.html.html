@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Namma Udupi | Coastal Travel Guide</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f6f9;
+}
+
+/* HERO SECTION */
+.hero{
+    min-height: 100vh;
+    background:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+      url("images/caption.jpg") center/cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+.hero h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+/* SECTION BOX */
+.section-box{
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    margin-bottom: 40px;
+}
+
+/* ATTRACTION CARDS */
+.attraction-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+.attraction-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.attraction-card img{
+    height: 220px;
+    object-fit: cover;
+}
+.attraction-card .card-body{
+    flex-grow: 1;
+}
+
+/* ICON STYLE */
+.icon{
+    font-size: 2rem;
+    color: #0d6efd;
+}
+
+/* MAP */
+.map iframe{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* FOOTER */
+footer{
+    background: #0b132b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">
+<i class="bi bi-compass"></i> NAMMA UDUPI
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<div class="navbar-nav ms-auto">
+<a class="nav-link" href="#about">About</a>
+<a class="nav-link" href="#places">Places</a>
+<a class="nav-link" href="#table">Info</a>
+<a class="nav-link" href="#media">Media</a>
+<a class="nav-link" href="#map">Map</a>
+<a class="nav-link" href="#plan">Plan</a>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1>Discover the Charm of Udupi</h1>
+<p>Spiritual heritage • Coastal beauty • Cultural richness</p>
+<button class="btn btn-primary btn-lg mt-3">
+<i class="bi bi-airplane"></i> Explore Now
+</button>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container mt-5">
+<div class="section-box">
+<h2 class="text-primary">
+<i class="bi bi-heart-fill"></i> About Udupi
+</h2>
+<p>
+Udupi is a well-known coastal city in Karnataka that attracts visitors with its
+historic temples, calm beaches, and distinct food culture.
+The city offers a peaceful environment where tradition and nature coexist.
+</p>
+
+<ul>
+<li><i class="bi bi-check-circle-fill text-success"></i> Ancient temples</li>
+<li><i class="bi bi-check-circle-fill text-success"></i> Scenic coastline</li>
+<li><i class="bi bi-check-circle-fill text-success"></i> Authentic cuisine</li>
+</ul>
+
+<div class="alert alert-info">
+<i class="bi bi-calendar-event"></i> Ideal travel season: October to February
+</div>
+</div>
+</section>
+
+<!-- PLACES -->
+<section id="places" class="container">
+<h2 class="text-center text-primary mb-4">
+<i class="bi bi-geo-alt"></i> Popular Attractions
+</h2>
+
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card attraction-card">
+<img src="images/p1.jpg" class="card-img-top" alt="Sri Krishna Temple">
+<div class="card-body text-center">
+<i class="bi bi-building icon"></i>
+<h5>Sri Krishna Temple</h5>
+<p>Historic spiritual center</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card attraction-card">
+<img src="images/p2.jpg" class="card-img-top" alt="Malpe Beach">
+<div class="card-body text-center">
+<i class="bi bi-water icon"></i>
+<h5>Malpe Beach</h5>
+<p>Relaxing seaside destination</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card attraction-card">
+<img src="images/p3.webp" class="card-img-top" alt="St Mary's Island">
+<div class="card-body text-center">
+<i class="bi bi-globe icon"></i>
+<h5>St. Mary’s Island</h5>
+<p>Natural rock formations</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TABLE -->
+<section id="table" class="container mt-5">
+<div class="section-box">
+<h2 class="text-primary">
+<i class="bi bi-table"></i> Tourist Information
+</h2>
+
+<table class="table table-striped table-bordered table-hover mt-3">
+<thead class="table-dark">
+<tr>
+<th>Attraction</th>
+<th>Category</th>
+<th>Distance</th>
+<th>Best Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sri Krishna Temple</td>
+<td>Religious</td>
+<td>City Center</td>
+<td>Morning</td>
+</tr>
+<tr>
+<td>Malpe Beach</td>
+<td>Beach</td>
+<td>6 km</td>
+<td>Evening</td>
+</tr>
+<tr>
+<td>St. Mary’s Island</td>
+<td>Island</td>
+<td>Boat Ride</td>
+<td>Daytime</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- MEDIA -->
+<section id="media" class="container mt-5">
+<div class="section-box">
+<h2 class="text-primary">
+<i class="bi bi-play-circle"></i> Experience Udupi
+</h2>
+
+<p><strong><i class="bi bi-music-note-beamed"></i> Cultural Audio</strong></p>
+<audio controls class="w-100">
+Your browser does not support audio playback.
+</audio>
+
+<p class="mt-3"><strong><i class="bi bi-film"></i> Travel Video</strong></p>
+<div class="ratio ratio-16x9 mb-3">
+<iframe src="https://www.youtube.com/embed/2hYfN8wFzqY" allowfullscreen></iframe>
+</div>
+
+<p class="mt-4">Visitor Satisfaction</p>
+<div class="progress">
+<div class="progress-bar bg-success" style="width: 92%">92%</div>
+</div>
+</div>
+</section>
+
+<!-- MAP -->
+<section id="map" class="container mt-5">
+<div class="section-box map">
+<h2 class="text-primary">
+<i class="bi bi-map"></i> Find Udupi
+</h2>
+<iframe src="https://www.google.com/maps?q=Udupi,Karnataka&output=embed"></iframe>
+</div>
+</section>
+
+<!-- PLAN -->
+<section id="plan" class="container mt-5">
+<div class="section-box">
+<h2 class="text-primary">
+<i class="bi bi-clipboard-check"></i> Plan Your Trip
+</h2>
+
+<form>
+<div class="mb-3">
+<label class="form-label">Name</label>
+<input type="text" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Travel Date</label>
+<input type="date" class="form-control">
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">Include local food tour</label>
+</div>
+
+<div class="btn-group">
+<button class="btn btn-success"><i class="bi bi-send"></i> Submit</button>
+<button class="btn btn-secondary"><i class="bi bi-arrow-clockwise"></i> Reset</button>
+</div>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="mt-5">
+<p>© 2025 Namma Udupi | Web Technologies AAT-1</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
